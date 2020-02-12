@@ -2,7 +2,7 @@
   <section class="hero is-large is-light">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-1 is-2-tablet">
+        <h1 class="is-size-4-mobile is-size-3-tablet is-size-1-desktop title">
           Lorem Ipsum Dolor.
         </h1>
         <h2 class="subtitle">

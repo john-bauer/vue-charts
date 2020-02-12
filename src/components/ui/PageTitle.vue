@@ -1,8 +1,8 @@
 <template>
-  <section class="hero is-light -page-title">
-    <div class="hero-body" v-bind:class="backgroundClass">
+  <section class="hero is-light" :class="heroClass">
+    <div class="hero-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="title is-size-3-touch">
           {{ title }}
         </h1>
         <slot></slot>
@@ -16,7 +16,7 @@ export default {
   name: "PageTitle",
   props: {
     title: String,
-    backgroundClass: String
+    heroClass: String
   }
 };
 </script>

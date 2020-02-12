@@ -1,12 +1,22 @@
 <template>
   <div class="-chart-types-page-index">
-    chart types page
+    <PageTitle title="Chart Types" heroClass="is-info is-medium">
+      <p class="subtitle">
+        A set of charts that you can use, each as a component in
+        <code>/components/charts/static</code>
+      </p>
+    </PageTitle>
   </div>
 </template>
 
 <script>
+import PageTitle from "@/components/ui/PageTitle.vue";
+
 export default {
-  name: "ChartTypesPageIndex"
+  name: "ChartTypesPageIndex",
+  components: {
+    PageTitle
+  }
 };
 </script>
 
