@@ -3,7 +3,7 @@
     <PageTitle title="Chart Types" heroClass="is-info is-medium">
       <p class="subtitle">
         A set of charts that you can use, each as a component in
-        <code>/components/charts/static</code>
+        <span class="is-family-code">/components/charts/static</span>.
       </p>
     </PageTitle>
   </div>
