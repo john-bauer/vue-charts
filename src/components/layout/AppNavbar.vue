@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="is-light"></b-navbar>
+  <b-navbar></b-navbar>
 </template>
 
 <script>

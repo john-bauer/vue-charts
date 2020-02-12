@@ -1,12 +1,17 @@
 <template>
   <div class="-home-page-index">
-    home page
+    <AppJumbotron />
   </div>
 </template>
 
 <script>
+import AppJumbotron from "@/components/pages/home/AppJumbotron.vue";
+
 export default {
-  name: "HomePageIndex"
+  name: "HomePageIndex",
+  components: {
+    AppJumbotron
+  }
 };
 </script>
 
