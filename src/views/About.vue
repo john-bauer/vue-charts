@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about-page">
+    <AboutPageIndex />
   </div>
 </template>
+
+<script>
+import AboutPageIndex from "@/components/pages/about/PageIndex.vue";
+
+export default {
+  name: "Home",
+  components: {
+    AboutPageIndex
+  }
+};
+</script>
+
+<style scoped lang="scss"></style>
