@@ -3,19 +3,23 @@
     <PageTitle title="Chart Types" heroClass="is-info is-small">
       <p class="subtitle">
         A set of charts that you can use, each as a component in
-        <span class="is-family-code">/components/charts/static</span>
+        <span class="is-family-code">@/components/charts/static</span>, using
+        local data.
       </p>
     </PageTitle>
+    <ChartsList />
   </div>
 </template>
 
 <script>
 import PageTitle from "@/components/ui/PageTitle.vue";
+import ChartsList from "@/components/pages/chart-types/ChartsList.vue";
 
 export default {
   name: "ChartTypesPageIndex",
   components: {
-    PageTitle
+    PageTitle,
+    ChartsList
   }
 };
 </script>
