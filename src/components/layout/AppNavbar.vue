@@ -1,12 +1,10 @@
 <template>
-  <div class="hello">
-    hello
-  </div>
+  <b-navbar class="is-light"></b-navbar>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "AppNavbar"
 };
 </script>
 

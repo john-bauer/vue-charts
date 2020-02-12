@@ -1,0 +1,43 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+@import "variables";
+@import url("https://use.typekit.net/ehu7uwo.css");
+
+// custom colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+$google: #de5246;
+$google-invert: findColorInvert($google);
+$facebook: #1877f2;;
+$facebook-invert: findColorInvert($facebook);
+$instagram: #3f729b;
+$instagram-invert: findColorInvert($instagram);
+$behance: #053EFF;
+$behance-invert: findColorInvert($behance);
+$dribbble: #EA4C89;
+$dribbble-invert: findColorInvert($dribbble);
+
+
+@import "~bulma/sass/utilities/derived-variables";
+
+// add colors to color map
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert),
+  "google": ($google, $google-invert),
+  "facebook": ($facebook, $facebook-invert),
+  "instagram": ($instagram, $instagram-invert),
+  "behance": ($behance, $behance-invert),
+  "dribbble": ($dribbble, $dribbble-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+@import "theme";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+@import "overrides";

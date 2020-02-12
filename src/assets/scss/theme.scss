@@ -1,0 +1,32 @@
+// This file is for overriding default bulma scss variables.
+
+
+/* -----------------------------
+          NAVBAR
+------------------------------*/
+$navbar-height: 4rem;
+$navbar-item-color: $grey;
+$navbar-item-hover-color: $black;
+$navbar-item-active-color: $black;
+$navbar-item-hover-background-color: transparent;
+
+
+
+/* -----------------------------
+            BOX
+------------------------------*/
+$box-shadow: none;
+$box-background-color: #fafafa;
+
+
+/*------------------------------
+            LABEL
+-------------------------------*/
+$label-weight: $weight-medium;
+
+
+/*------------------------------
+            FOOTER
+-------------------------------*/
+$footer-color: #FAFAFA;
+$footer-background-color: #212121;
