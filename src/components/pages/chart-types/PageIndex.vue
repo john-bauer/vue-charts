@@ -1,9 +1,9 @@
 <template>
   <div class="-chart-types-page-index">
-    <PageTitle title="Chart Types" heroClass="is-info is-medium">
+    <PageTitle title="Chart Types" heroClass="is-info is-small">
       <p class="subtitle">
         A set of charts that you can use, each as a component in
-        <span class="is-family-code">/components/charts/static</span>.
+        <span class="is-family-code">/components/charts/static</span>
       </p>
     </PageTitle>
   </div>

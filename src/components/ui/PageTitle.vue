@@ -2,9 +2,9 @@
   <section class="hero is-light" :class="heroClass">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-size-3-touch">
+        <h3 class="title is-size-3 is-size-4-touch has-padding-bottom-10">
           {{ title }}
-        </h1>
+        </h3>
         <slot></slot>
       </div>
     </div>
