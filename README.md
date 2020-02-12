@@ -51,6 +51,4 @@ yarn serve
 ## Contribution & Use
 If you have any suggestions, spot a defect, or see improvements that can be made, I'm all ears. Open up a PR or create an issue and we'll work together on making this better.
 
-Remember that the example production environment is available to everyone, and intended to serve as a resource for getting started I'll occasionally re-seed the database but please use it respectfully and avoid massive request volume.
-
 License is MIT. Feel free to use this source code in your own projects.
