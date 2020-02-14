@@ -2,11 +2,25 @@
   <section class="section">
     <div class="container">
       <div v-for="chart in charts" :key="chart.name">
-        <SectionTitle :title="chart.name">
+        <SectionTitle :title="chart.name" target="_blank">
           <p class="subtitle">{{ chart.description }}</p>
           <div class="buttons">
-            <b-button type="is-chartjs" size="is-small"
+            <b-button
+              tag="a"
+              :href="chart.apiReference"
+              target="_blank"
+              type="is-chartjs"
+              size="is-small"
               >Chart.js Reference</b-button
+            >
+            <b-button
+              tag="a"
+              :href="chart.dataFile"
+              download
+              size="is-small"
+              icon-left="download"
+              type="is-info"
+              >Sample Data</b-button
             >
           </div>
           <component
@@ -21,7 +35,10 @@
 </template>
 
 <script>
+// import section title ui
 import SectionTitle from "@/components/ui/SectionTitle.vue";
+
+// import each chart as a component
 import LineChart from "@/components/ui/charts/static/LineChart";
 import BarChart from "@/components/ui/charts/static/BarChart";
 import DoughnutChart from "@/components/ui/charts/static/DoughnutChart";
@@ -29,6 +46,8 @@ import PieChart from "@/components/ui/charts/static/PieChart";
 import PolarAreaChart from "@/components/ui/charts/static/PolarAreaChart";
 import RadarChart from "@/components/ui/charts/static/RadarChart";
 import BubbleChart from "@/components/ui/charts/static/BubbleChart";
+
+// import sample data
 import sampleDataOne from "@/data/dataSet_01.js";
 import sampleDataTwo from "@/data/dataSet_02.js";
 import sampleDataThree from "@/data/dataSet_03.js";
@@ -53,14 +72,18 @@ export default {
             "A way of plotting data points on a line. Often used to show trend data, or a comparison of two sets of data.",
           chartData: sampleDataOne.datacollection,
           chartOptions: sampleDataOne.options,
+          dataFile: "/data/dataSet_01.js",
+          apiReference: "https://www.chartjs.org/docs/latest/charts/line.html",
           elementName: "line-chart"
         },
         {
-          name: "Line Chart",
+          name: "Bar Chart",
           description:
             "Provides a way of showing data values represented as vertical bars. It is sometimes used to show trend data, and the comparison of multiple data sets side by side.",
           chartData: sampleDataTwo.datacollection,
           chartOptions: sampleDataTwo.options,
+          dataFile: "/data/dataSet_02.js",
+          apiReference: "https://www.chartjs.org/docs/latest/charts/bar.html",
           elementName: "bar-chart"
         },
         {
@@ -69,6 +92,9 @@ export default {
             "A common chart divided into segments, where the arc of each segment shows the proportional value of each piece of data.",
           chartData: sampleDataThree.datacollection,
           chartOptions: sampleDataThree.options,
+          dataFile: "/data/dataSet_03.js",
+          apiReference:
+            "https://www.chartjs.org/docs/latest/charts/doughnut.html",
           elementName: "pie-chart"
         },
         {
@@ -77,14 +103,19 @@ export default {
             "Very similar to a pie chart, but has a configurable cutout in the middle.",
           chartData: sampleDataFour.datacollection,
           chartOptions: sampleDataFour.options,
+          dataFile: "/data/dataSet_01.js",
+          apiReference:
+            "https://www.chartjs.org/docs/latest/charts/doughnut.html",
           elementName: "doughnut-chart"
         },
         {
           name: "Radar Chart",
           description:
-            "a way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.",
+            "A way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.",
           chartData: sampleDataFive.datacollection,
           chartOptions: sampleDataFive.options,
+          dataFile: "/data/dataSet_01.js",
+          apiReference: "https://www.chartjs.org/docs/latest/charts/radar.html",
           elementName: "radar-chart"
         },
         {
@@ -93,6 +124,8 @@ export default {
             "Similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.",
           chartData: sampleDataSix.datacollection,
           chartOptions: sampleDataSix.options,
+          dataFile: "/data/dataSet_01.js",
+          apiReference: "https://www.chartjs.org/docs/latest/charts/polar.html",
           elementName: "polar-area-chart"
         },
         {
@@ -101,6 +134,9 @@ export default {
             "Similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.",
           chartData: sampleDataSeven.datacollection,
           chartOptions: sampleDataSeven.options,
+          dataFile: "/data/dataSet_01.js",
+          apiReference:
+            "https://www.chartjs.org/docs/latest/charts/bubble.html",
           elementName: "bubble-chart"
         }
       ]
