@@ -1,5 +1,5 @@
 <template>
-  <section class="hero has-background-white-ter">
+  <section class="hero is-medium has-background-white-ter">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
