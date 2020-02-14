@@ -1,12 +1,17 @@
 <template>
   <div class="how-it-works-page">
-    How It Works
+    <HowItWorksIndex />
   </div>
 </template>
 
 <script>
+import HowItWorksIndex from "@/components/pages/how-it-works/PageIndex.vue";
+
 export default {
-  name: "HowItWorks"
+  name: "HowItWorks",
+  components: {
+    HowItWorksIndex
+  }
 };
 </script>
 
