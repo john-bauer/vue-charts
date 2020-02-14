@@ -1,26 +1,50 @@
-// used for doughnut
+// used for bar
 
 const sampleData = {
   datacollection: {
-    labels: ["Vue", "Ember", "React", "Angular"],
+    labels: ["Red", "Green", "Blue", "Yellow", "Other"],
     datasets: [
       {
         backgroundColor: [
-          "rgba(65, 184, 131, .8)",
-          "rgba(228, 102, 81, .8)",
-          "rgba(0, 216, 255, .8)",
-          "rgba(155, 89, 182, .8)"
+          "#FF8A80",
+          "#B9F6CA",
+          "#82B1FF",
+          "#FFFF8D",
+          "#BDBDBD"
         ],
         pointBackgroundColor: "white",
         borderWidth: 1,
         pointBorderColor: "#249EBF",
-        data: [40, 20, 80, 10]
+        data: [55, 74, 89, 55, 22]
       }
     ]
   },
   options: {
+    title: {
+      display: true,
+      text: "Favorite Color"
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true
+          },
+          gridLines: {
+            display: true
+          }
+        }
+      ],
+      xAxes: [
+        {
+          gridLines: {
+            display: false
+          }
+        }
+      ]
+    },
     legend: {
-      display: true
+      display: false
     },
     responsive: true,
     maintainAspectRatio: false

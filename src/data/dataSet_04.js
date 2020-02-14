@@ -1,53 +1,31 @@
-// used for bubble chart
+// used for doughnut
 
 const sampleData = {
   datacollection: {
+    labels: ["Vue", "Ember", "React", "Angular"],
     datasets: [
       {
-        label: "Data One",
-        backgroundColor: "rgba(255,99,132,1)",
-        data: [
-          {
-            x: 20,
-            y: 25,
-            r: 5
-          },
-          {
-            x: 40,
-            y: 10,
-            r: 10
-          },
-          {
-            x: 30,
-            y: 22,
-            r: 30
-          }
-        ]
-      },
-      {
-        label: "Data Two",
-        backgroundColor: "rgba(0, 216, 255, .3)",
-        data: [
-          {
-            x: 10,
-            y: 30,
-            r: 15
-          },
-          {
-            x: 20,
-            y: 20,
-            r: 10
-          },
-          {
-            x: 15,
-            y: 8,
-            r: 30
-          }
-        ]
+        backgroundColor: [
+          "rgba(65, 184, 131, .8)",
+          "rgba(228, 102, 81, .8)",
+          "rgba(0, 216, 255, .8)",
+          "rgba(155, 89, 182, .8)"
+        ],
+        pointBackgroundColor: "white",
+        borderWidth: 1,
+        pointBorderColor: "#249EBF",
+        data: [21, 7, 56, 16]
       }
     ]
   },
   options: {
+    legend: {
+      display: true
+    },
+    title: {
+      display: true,
+      text: "Preferred JavaScript Framework (2020)"
+    },
     responsive: true,
     maintainAspectRatio: false
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="-section-title">
-    <h4 class="title is-size-4 is-5-touch">
+    <h4 class="title is-spaced is-size-4 is-5-touch">
       <span class="has-text-info has-margin-right-10">#</span>{{ title }}
     </h4>
     <slot></slot>

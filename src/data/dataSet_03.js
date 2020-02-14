@@ -1,34 +1,31 @@
-// used for doughnut
+// used for pie
 
 const sampleData = {
   datacollection: {
-    labels: ["Eating", "Drinking"],
+    labels: ["Vue", "Ember", "React", "Angular"],
     datasets: [
       {
-        label: "Eating",
-        backgroundColor: "rgba(0, 216, 255, .3)",
-        borderColor: "rgba(0, 216, 255, .8)",
+        backgroundColor: [
+          "rgba(65, 184, 131, .8)",
+          "rgba(228, 102, 81, .8)",
+          "rgba(0, 216, 255, .8)",
+          "rgba(155, 89, 182, .8)"
+        ],
+        pointBackgroundColor: "white",
         borderWidth: 1,
-        pointBackgroundColor: "#fff",
-        pointBorderColor: "#fff",
-        pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "rgba(179,181,198,1)",
-        data: [65, 59, 90, 81, 56, 55, 40]
-      },
-      {
-        label: "Drinking",
-        backgroundColor: "rgba(228, 102, 81, .3)",
-        borderColor: "rgba(255,99,132,1)",
-        pointBackgroundColor: "rgba(255,99,132,1)",
-        borderWidth: 1,
-        pointBorderColor: "#fff",
-        pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "rgba(255,99,132,1)",
-        data: [28, 48, 40, 19, 96, 27, 100]
+        pointBorderColor: "#249EBF",
+        data: [21, 7, 56, 16]
       }
     ]
   },
   options: {
+    legend: {
+      display: true
+    },
+    title: {
+      display: true,
+      text: "Preferred JavaScript Framework (2020)"
+    },
     responsive: true,
     maintainAspectRatio: false
   }
