@@ -5,11 +5,11 @@
         <div class="columns -reverse-columns">
           <div class="column is-7">
             <h1
-              class="is-size-4-mobile is-size-3-tablet is-size-1-desktop title is-spaced has-text-centered-touch"
+              class="is-size-4-mobile is-size-3-tablet is-size-1-desktop title is-spaced has-text-centered-mobile -add-desktop-margin"
             >
               A Simple Approach To Charting.
             </h1>
-            <h2 class="subtitle is-spaced has-text-centered-touch">
+            <h2 class="subtitle is-spaced has-text-centered-mobile">
               A demo app that showcases the power of
               <a href="https://vuejs.org/" class="has-text-link" target="_blank"
                 >Vue</a
@@ -59,7 +59,8 @@ export default {
   fill: hsl(0, 0%, 96%);
 }
 
-@media only screen and (max-width: 1024px) {
+// todo: rewrite/refactor, a little sloppy
+@media only screen and (max-width: 768px) {
   .-mobile-center {
     display: flex;
     justify-content: center;
@@ -78,6 +79,12 @@ export default {
   .-reverse-columns {
     flex-direction: column-reverse;
     display: flex;
+  }
+}
+
+@media (min-width: 767px) {
+  .-add-desktop-margin {
+    margin-top: 50px;
   }
 }
 </style>
