@@ -23,12 +23,12 @@ const routes = [
   {
     path: "/reactive-props",
     name: "Reactive Props",
-    component: () => import("../views/ChartTypes.vue")
+    component: () => import("../views/ReactiveProps.vue")
   },
   {
     path: "/api-data",
     name: "API Data",
-    component: () => import("../views/ChartTypes.vue")
+    component: () => import("../views/ApiData.vue")
   }
 ];
 
