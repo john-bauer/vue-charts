@@ -1,16 +1,28 @@
 <template>
   <div class="-reactive-props-page-index">
-    reactive props page
+    <PageTitle title="Reactive Props" heroClass="is-info">
+      <p class="subtitle">
+        When you're working with dynamic data, you can update them in realtime
+        using reactive props. Learn more
+        <a
+          href="https://vue-chartjs.org/guide/#vue-single-file-components"
+          target="_blank"
+          >here</a
+        >.
+      </p>
+    </PageTitle>
     <ReactiveCharts />
   </div>
 </template>
 
 <script>
+import PageTitle from "@/components/ui/PageTitle.vue";
 import ReactiveCharts from "@/components/pages/reactive-props/ReactiveCharts";
 
 export default {
   name: "ReactivePropsPageIndex",
   components: {
+    PageTitle,
     ReactiveCharts
   }
 };
