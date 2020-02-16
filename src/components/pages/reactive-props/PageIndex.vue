@@ -1,12 +1,18 @@
 <template>
   <div class="-reactive-props-page-index">
     reactive props page
+    <ReactiveCharts />
   </div>
 </template>
 
 <script>
+import ReactiveCharts from "@/components/pages/reactive-props/ReactiveCharts";
+
 export default {
-  name: "ReactivePropsPageIndex"
+  name: "ReactivePropsPageIndex",
+  components: {
+    ReactiveCharts
+  }
 };
 </script>
 
