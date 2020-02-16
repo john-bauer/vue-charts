@@ -4,10 +4,13 @@
       <p class="subtitle">
         When you're working with dynamic data, you can update them in realtime
         using reactive props. Learn more
-        <a
-          href="https://vue-chartjs.org/guide/#vue-single-file-components"
-          target="_blank"
-          >here</a
+        <u>
+          <a
+            href="https://vue-chartjs.org/guide/#vue-single-file-components"
+            target="_blank"
+            class="is-underlined"
+            >here</a
+          ></u
         >.
       </p>
     </PageTitle>

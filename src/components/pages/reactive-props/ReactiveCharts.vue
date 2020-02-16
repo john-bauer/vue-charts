@@ -1,5 +1,20 @@
 <template>
   <div class="-reactive-charts section container">
+    <b-notification
+      type="is-warning"
+      has-icon
+      aria-close-label="Close notification"
+      role="alert"
+    >
+      The
+      <a href="https://vue-chartjs.org/guide/#events"
+        >vue-chartjs documentation</a
+      >
+      notes that: "The reactivity system at its current state is not robust. You
+      will run into several problems with it because there are many use-cases
+      and ways to pass in your data." I've run into several issues first-hand,
+      so use this feature with caution.
+    </b-notification>
     <BarChart :chart-data="datacollection" :options="sampleDataOne.options" />
     <b-button @click="fillData()">Randomize</b-button>
   </div>
