@@ -19,6 +19,16 @@ const routes = [
     path: "/chart-types",
     name: "Chart Types",
     component: () => import("../views/ChartTypes.vue")
+  },
+  {
+    path: "/reactive-props",
+    name: "Reactive Props",
+    component: () => import("../views/ChartTypes.vue")
+  },
+  {
+    path: "/api-data",
+    name: "API Data",
+    component: () => import("../views/ChartTypes.vue")
   }
 ];
 

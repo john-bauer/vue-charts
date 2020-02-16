@@ -16,6 +16,12 @@
       <b-navbar-item tag="router-link" :to="{ name: 'Chart Types' }">
         Chart Types
       </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ name: 'Reactive Props' }">
+        Reactive Props
+      </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ name: 'API Data' }">
+        API Data
+      </b-navbar-item>
     </template>
   </b-navbar>
 </template>
