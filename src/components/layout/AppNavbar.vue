@@ -10,9 +10,6 @@
       </b-navbar-item>
     </template>
     <template slot="end">
-      <b-navbar-item tag="router-link" :to="{ name: 'How It Works' }">
-        How It Works
-      </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ name: 'Chart Types' }">
         Chart Types
       </b-navbar-item>

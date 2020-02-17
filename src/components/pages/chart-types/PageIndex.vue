@@ -1,6 +1,6 @@
 <template>
   <div class="-chart-types-page-index">
-    <PageTitle title="Chart Types" heroClass="is-light">
+    <PageTitle title="Chart Types" heroClass="is-primary">
       <p class="subtitle">
         A set of charts that you can use, each as a component in
         <span class="is-family-code">@/components/charts/static</span>, using

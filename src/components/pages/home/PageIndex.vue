@@ -1,19 +1,19 @@
 <template>
   <div class="-home-page-index">
     <AppJumbotron />
-    <TechnologiesLogos />
+    <!-- <TechnologiesLogos /> -->
   </div>
 </template>
 
 <script>
 import AppJumbotron from "@/components/pages/home/AppJumbotron.vue";
-import TechnologiesLogos from "@/components/pages/home/TechnologiesLogos.vue";
+// import TechnologiesLogos from "@/components/pages/home/TechnologiesLogos.vue";
 
 export default {
   name: "HomePageIndex",
   components: {
-    AppJumbotron,
-    TechnologiesLogos
+    AppJumbotron
+    // TechnologiesLogos
   }
 };
 </script>

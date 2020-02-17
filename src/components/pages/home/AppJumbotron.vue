@@ -30,7 +30,13 @@
               package.
             </h2>
             <div class="buttons -mobile-center">
-              <b-button type="is-primary">How It Works</b-button>
+              <b-button
+                tag="a"
+                href="https://github.com/john-bauer/vue-charts"
+                icon-left="github-circle"
+                type="is-github"
+                >Explore the Project</b-button
+              >
             </div>
           </div>
           <div class="column is-5 is-hiden-touch">

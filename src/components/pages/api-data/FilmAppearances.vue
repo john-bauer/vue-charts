@@ -5,10 +5,14 @@
       :chartdata="chartdata"
       :options="SampleDataOne.options"
     ></bar-chart>
+    <div v-else-if="!loaded">
+      <Spinner />
+    </div>
   </div>
 </template>
 
 <script>
+import Spinner from "vue-simple-spinner";
 import starWarsApi from "@/api/starWarsApi.js";
 import SampleDataOne from "@/data/api-data/dataSet_01";
 import BarChart from "@/components/ui/charts/static/BarChart.js";
@@ -51,6 +55,7 @@ export default {
     this.getStarWarsData();
   },
   components: {
+    Spinner,
     BarChart
   }
 };
