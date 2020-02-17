@@ -14,18 +14,25 @@
         >.
       </p>
     </PageTitle>
-    <ReactiveCharts />
+    <section class="section">
+      <div class="container">
+        <ReactivityWarning />
+        <ReactiveCharts />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import PageTitle from "@/components/ui/PageTitle.vue";
+import ReactivityWarning from "@/components/pages/reactive-props/ReactivityWarning";
 import ReactiveCharts from "@/components/pages/reactive-props/ReactiveCharts";
 
 export default {
   name: "ReactivePropsPageIndex",
   components: {
     PageTitle,
+    ReactivityWarning,
     ReactiveCharts
   }
 };

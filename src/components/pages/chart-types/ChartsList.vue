@@ -48,13 +48,13 @@ import RadarChart from "@/components/ui/charts/static/RadarChart";
 import BubbleChart from "@/components/ui/charts/static/BubbleChart";
 
 // import sample data
-import sampleDataOne from "@/data/dataSet_01.js";
-import sampleDataTwo from "@/data/dataSet_02.js";
-import sampleDataThree from "@/data/dataSet_03.js";
-import sampleDataFour from "@/data/dataSet_04.js";
-import sampleDataFive from "@/data/dataSet_05.js";
-import sampleDataSix from "@/data/dataSet_06.js";
-import sampleDataSeven from "@/data/dataSet_07.js";
+import sampleDataOne from "@/data/static/dataSet_01.js";
+import sampleDataTwo from "@/data/static/dataSet_02.js";
+import sampleDataThree from "@/data/static/dataSet_03.js";
+import sampleDataFour from "@/data/static/dataSet_04.js";
+import sampleDataFive from "@/data/static/dataSet_05.js";
+import sampleDataSix from "@/data/static/dataSet_06.js";
+import sampleDataSeven from "@/data/static/dataSet_07.js";
 
 export default {
   name: "ChartList",
