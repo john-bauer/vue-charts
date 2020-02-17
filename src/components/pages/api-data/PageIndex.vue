@@ -1,12 +1,19 @@
 <template>
-  <div class="-api-data-page-index">
-    api data page index
-  </div>
+  <section class="section">
+    <div class="container">
+      <FilmAppearances />
+    </div>
+  </section>
 </template>
 
 <script>
+import FilmAppearances from "@/components/pages/api-data/FilmAppearances.vue";
+
 export default {
-  name: "ApiDataPageIndex"
+  name: "ApiDataPageIndex",
+  components: {
+    FilmAppearances
+  }
 };
 </script>
 
