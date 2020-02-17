@@ -14,6 +14,26 @@
                 :chartdata="chart.chartData"
                 :options="chart.chartOptions"
               ></component>
+              <br />
+              <div class="buttons -center-buttons">
+                <b-button
+                  tag="a"
+                  :href="chart.apiReference"
+                  target="_blank"
+                  type="is-chartjs"
+                  size="is-small"
+                  >Chart.js Reference</b-button
+                >
+                <b-button
+                  tag="a"
+                  :href="chart.dataFile"
+                  download
+                  size="is-small"
+                  icon-left="download"
+                  type="is-info"
+                  >Sample Data</b-button
+                >
+              </div>
             </b-tab-item>
           </template>
         </b-tabs>
@@ -148,4 +168,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.-center-buttons {
+  justify-content: center;
+}
+</style>
