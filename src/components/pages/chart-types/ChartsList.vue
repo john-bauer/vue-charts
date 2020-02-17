@@ -1,34 +1,22 @@
 <template>
   <section class="section">
     <div class="container">
-      <div v-for="chart in charts" :key="chart.name">
-        <SectionTitle :title="chart.name" target="_blank">
-          <p class="subtitle">{{ chart.description }}</p>
-          <div class="buttons">
-            <b-button
-              tag="a"
-              :href="chart.apiReference"
-              target="_blank"
-              type="is-chartjs"
-              size="is-small"
-              >Chart.js Reference</b-button
-            >
-            <b-button
-              tag="a"
-              :href="chart.dataFile"
-              download
-              size="is-small"
-              icon-left="download"
-              type="is-info"
-              >Sample Data</b-button
-            >
-          </div>
-          <component
-            :is="chart.elementName"
-            :chartdata="chart.chartData"
-            :options="chart.chartOptions"
-          ></component>
-        </SectionTitle>
+      <div class="block">
+        <b-tabs v-model="activeTab" position="is-centered">
+          <template v-for="(chart, index) in charts">
+            <b-tab-item :key="index" :label="chart.name">
+              <p class="subtitle has-text-centered is-italic">
+                {{ chart.description }}
+              </p>
+              <component
+                v-if="index === activeTab"
+                :is="chart.elementName"
+                :chartdata="chart.chartData"
+                :options="chart.chartOptions"
+              ></component>
+            </b-tab-item>
+          </template>
+        </b-tabs>
       </div>
     </div>
   </section>
@@ -60,6 +48,7 @@ export default {
   name: "ChartList",
   data() {
     return {
+      activeTab: null,
       sampleDataOne,
       sampleDataTwo,
       sampleDataThree,
@@ -131,7 +120,7 @@ export default {
         {
           name: "Bubble Chart",
           description:
-            "Similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.",
+            "used to display three dimensions of data at the same time. The location of the bubble is determined by the first two dimensions and the corresponding horizontal and vertical axes. The third dimension is represented by the size of the individual bubbles",
           chartData: sampleDataSeven.datacollection,
           chartOptions: sampleDataSeven.options,
           dataFile: "/data/dataSet_01.js",
@@ -141,6 +130,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    this.activeTab = 0;
   },
   components: {
     SectionTitle,
