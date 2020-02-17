@@ -1,18 +1,18 @@
 <template>
   <div class="-reactive-charts">
     <ReactiveLine />
-    <ReactiveBar />
+    <!-- <ReactiveBar /> -->
   </div>
 </template>
 
 <script>
-import ReactiveBar from "@/components/pages/reactive-props/chart-components/ReactiveBar";
+// import ReactiveBar from "@/components/pages/reactive-props/chart-components/ReactiveBar";
 import ReactiveLine from "@/components/pages/reactive-props/chart-components/ReactiveLine";
 
 export default {
   name: "ReactiveCharts",
   components: {
-    ReactiveBar,
+    // ReactiveBar
     ReactiveLine
   }
 };
