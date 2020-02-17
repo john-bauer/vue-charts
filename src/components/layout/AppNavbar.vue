@@ -7,6 +7,9 @@
         class="has-text-weight-bold has-text-black"
       >
         📈 Vue Charts
+        <b-tag rounded class="has-margin-left-10" type="is-warning"
+          >in progress</b-tag
+        >
       </b-navbar-item>
     </template>
     <template slot="end">
