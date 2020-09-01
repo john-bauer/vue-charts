@@ -1,5 +1,5 @@
 import axios from "axios";
-let baseUrl = "https://swapi.co";
+let baseUrl = "https://swapi.dev";
 
 const TodosApi = {
   getAllPeople() {
